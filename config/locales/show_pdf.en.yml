@@ -1,0 +1,11 @@
+
+en:
+  admin:
+    actions:
+      show_pdf:
+        title: "Show Pdf"
+        menu: "Show Pdf for %{model_label} '%{object_label}'"
+        breadcrumb: "Show Pdf"
+        link: "Show Pdf"
+        bulk_link: "Show Pdf selected %{model_label_plural}"
+        done: "Show Pdfed"
