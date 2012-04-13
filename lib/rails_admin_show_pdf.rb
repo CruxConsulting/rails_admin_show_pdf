@@ -17,6 +17,11 @@ module RailsAdmin
           end
         end
 
+        # Is the action on an object scope (Example: /admin/team/1/edit)
+        register_instance_option :member? do
+          true
+        end
+
         register_instance_option :object_level do
           true
         end
