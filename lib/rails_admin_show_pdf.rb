@@ -10,6 +10,8 @@ module RailsAdmin
     module Actions
       class ShowPdf < Base
         RailsAdmin::Config::Actions.register(self)
+        RailsAdmin::Config::Actions.all
+        RailsAdmin::Config::Actions.send key
 
         register_instance_option :controller do
           Proc.new do
