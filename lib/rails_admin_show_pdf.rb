@@ -31,9 +31,15 @@ module RailsAdmin
           true
         end
 
+        register_instance_option :link_icon do
+          'icon-file'
+        end
+
+
         register_instance_option :object_level do
           true
         end
+
       end
     end
   end
