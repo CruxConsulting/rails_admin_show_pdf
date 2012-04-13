@@ -15,7 +15,14 @@ module RailsAdmin
 
         register_instance_option :controller do
           Proc.new do
-            render :action => @action.template_name, :layout => false
+
+            template_name = [@abstract_model.model_name.downcase, @action.template_name].join('_')
+            action_name = if template_exists?("rails_admin/main/#{template_name}")
+              template_name
+            else
+              @action.template_name
+            end
+            render :action => action_name, :layout => false
           end
         end
 
