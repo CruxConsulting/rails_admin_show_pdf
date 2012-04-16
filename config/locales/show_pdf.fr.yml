@@ -1,0 +1,9 @@
+fr:
+  admin:
+    actions:
+      show_pdf:
+        title: "Voir en PDF"
+        menu: "PDF"
+        breadcrumb: "Voir en PDF"
+        link: "Voir en PDF"
+        bulk_link: "Voir en PDF les %{model_label_plural} sélectionnés"
