@@ -35,6 +35,10 @@ module RailsAdmin
           'icon-file'
         end
 
+        register_instance_option :visible? do
+          template_name = [bindings[:abstract_model].model_name.downcase, action_name].join('_')
+          bindings[:controller].template_exists?("rails_admin/main/#{template_name}")
+        end
 
         register_instance_option :object_level do
           true
